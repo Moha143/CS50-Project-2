@@ -248,17 +248,17 @@
         <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
             {% for list in a1 %}
             <div class="col">
-                <div class="card h-100 shadow-sm">
+                <div class="card h-100 shadow-sm" >
+                <h3  style="padding: 0.5em"class="mt-3"> <span class="float-start">{{list.title}}</span></h3>
+                <h6 class="mt-3"> <span class="float-start">{{list.category}}</span></h6>
                     {% if list.image_url %}
-                       <img src="{{ list.image_url }}" class="list_img">
+                       <img src="{{ list.image_url }}" class="list_img" >
                         {% else %}
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/No_image_3x4.svg/1024px-No_image_3x4.svg.png" alt="No image Provided" class="list_img">
                         {% endif %}
-
                     <div class="card-body">
                         <div class="clearfix mb-3">
                             <span class="float-start badge rounded-pill bg-success"> Start Bid ${{ list.starting_bid }}</span>
-                            <span class="float-start">{{list.title}}</span>
                         </div>
                         <h5 class="card-title">
                             {{ list.desc }}
