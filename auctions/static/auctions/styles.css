@@ -5,7 +5,10 @@ body {
 .message{
     background-color:  #15317E;
     color: white;
+    font-size: 15px;
     padding: 2vw;
+    margin-top: 12px;
+    margin-top: 12px;
 }      
 
 .nav{
