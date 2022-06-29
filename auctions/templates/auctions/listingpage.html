@@ -9,8 +9,9 @@
 <main>
     <div class="container-fluid bg-trasparent" style="position: relative">
         <h2>Active Listings</h2>
-
+{% if isError%}
         <div class="row">
+
             <div class="col-md-6">
                 {% if messages %}
                 {% for message in messages %}
@@ -91,7 +92,15 @@
                 </div>
             </div>
         </div>
+{% else %}
+<div class="card-body">
+    <div class="clearfix ">
+        <span class="float-start badge rounded bg-success"> {{ msg}}
+        </span>
 
+    </div>
+</div>
+{% endif%}
 
 
 
