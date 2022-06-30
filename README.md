@@ -10,7 +10,7 @@ Design an eBay-like e-commerce auction site that will allow users to post auctio
 <h2>Homepage</h2>
 <img src="/img/listing.PNG">
 <h2>Categories Page</h2>
-<img src="/img/Categories.PNG">
+<img src="/img/categories.PNG">
 <h2>Watch List Page</h2>
 <img src="/img/watchlists.PNG">
 <h2>Win Page</h2>
