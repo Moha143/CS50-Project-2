@@ -8,7 +8,7 @@
 
 <main>
     <div class="container-fluid bg-trasparent" style="position: relative">
-        <h2>Active Listings</h2>
+        <h2>Watch Lists</h2>
         <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
             {% for list in user_watchlist %}
             {% if list.watch_list.active_bool == True %}

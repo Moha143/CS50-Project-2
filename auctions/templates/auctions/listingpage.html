@@ -9,10 +9,10 @@
 <main>
     <div class="container-fluid bg-trasparent" style="position: relative">
         <h2>Active Listings</h2>
-{% if isError%}
-        <div class="row">
 
-            <div class="col-md-6">
+        <div class="row" style=" height:12px;">
+
+            <div class="col-md-6" style=" height:12%%;">
                 {% if messages %}
                 {% for message in messages %}
                 <div class="message">{{ message }}</div>
@@ -41,9 +41,8 @@
                             <div class="d-grid gap-2 my-4">
                                 <form class="form-group" method="get" action="{% url 'bid' %}">
                                     <input class="form-control" name="bid_amnt" placeholder="Bid Amount" type="number"
-                                        required="Please enter a bid">
-                                    <button class="btn btn-outline-primary mt-3" type="submit" name="list_d" value={{
-                                        list.id }}>Bid Item</button>
+                                        required>
+                                    <button class="btn btn-outline-primary mt-3" type="submit" name="list_d" value={{list.id}}>Bid Item</button>
                                 </form>
                             </div>
                             <div class="d-grid gap-2 my-4">
@@ -92,18 +91,6 @@
                 </div>
             </div>
         </div>
-{% else %}
-<div class="card-body">
-    <div class="clearfix ">
-        <span class="float-start badge rounded bg-success"> {{ msg}}
-        </span>
-
-    </div>
-</div>
-{% endif%}
-
-
-
     </div>
 </main>
 

@@ -5,7 +5,7 @@
     <div id="activelist">
     {% for list in cat_list %}
     <div class = "card">
-        <a class="title bg-light" href={% url 'cat' list.category %}>{{list.category}}</a>
+        <a class="title bg-info" href={% url 'cat' list.category %}>{{list.category}}</a>
     </div>  
     {% endfor %}
     </div>
